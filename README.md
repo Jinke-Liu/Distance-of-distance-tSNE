@@ -30,8 +30,7 @@ notebook ``` spotdist.py``` computes the neural representations of drifting grat
 
 ## References
 <a id="1">[1]</a> 
-Grossberger, Lukas, Francesco P. Battaglia, and Martin Vinck. "Unsupervised clustering of temporal patterns in high-dimensional neuronal ensembles using a novel dissimilarity measure." PLoS computational biology 14.7 (2018): e1006283.
-
-<a id="2">[2]</a> 
 Siegle, Joshua H., et al. "Survey of spiking in the mouse visual system reveals functional hierarchy." Nature 592.7852 (2021): 86-92.
 
+<a id="2">[2]</a> 
+Grossberger, Lukas, Francesco P. Battaglia, and Martin Vinck. "Unsupervised clustering of temporal patterns in high-dimensional neuronal ensembles using a novel dissimilarity measure." PLoS computational biology 14.7 (2018): e1006283.
