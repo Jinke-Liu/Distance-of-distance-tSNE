@@ -4,6 +4,15 @@ Jinke Liu , Martin Vinck
 ## Introduction 
 In this project, we introduce a simple transformation on the distance matrix based on the neighboring relationship, so that the scattering noise in the data, if any, can be attracted to each other. Thus, the transformation helps separate the the clusters in the dataset from the scattering noise and improve the low-dimensional t-SNE embedding.  
 
+## Installation 
+The following examples were run in the Python virtual environment with dependencies listed below:
+1. ```conda install python=3.6.5```
+2. ```conda install matplotlib```
+3. ```conda install torch```
+4. ```conda install spotDist```
+5. ```conda install allensdk```
+
+
 ## Method 
 For each pair of data points, we consider the joint set of K neighbours of these two data points, and then compute the distance of distance w.r.t. this set of neighbour points. Using this transformation, we should be able to obtain a high similarity between scattering noise points, while relatively retaining the distances from noise points to the clusters, and the distances between the clusters.
 
