@@ -18,11 +18,20 @@ Gaussian Mixture Model to generate cluster data and scattering noise points. We 
 notebook ``` simulate.py``` samples data points from Gaussian Mixture models and tests distance-of-distance transformation. 
 
 ### Example: CNN representation of image patches 
-We took natural images of 20 different object classes from PASCAL dataset. Patches were cropped out of the images that either contain the object or contain only the random pixels without the object. We used the activaty pattern in the activation layer of a pretrained AlexNet as their representations. We showed that with distance-of-distance transformation, the object patches were more successfully separated from the random patches.  
+We took natural images of 20 different object classes from PASCAL VOC2007 dataset. Patches were cropped out of the images that either contain the object or contain only the random pixels without the object. We used the activaty pattern in the activation layer of a pretrained AlexNet as their representations. We showed that with distance-of-distance transformation, the object patches were more successfully separated from the random patches.  
 
 notebook ``` alex.py``` extracts the CNN representations of object/random patches and tests distance-of-distance transformation.  
 
 ### Example: Neural represenation of drifting grating stimulus
-We took Allen Institute Brain Observatory dataset. Mice were shown drifting grating visual stimulus moving in 8 different directions on the screen while being electrophysiologically recorded. Between the stimulus presentations, the neural activities were considered as the spontaneous activities. We compare the evoked neural response in V1 with the spontaneous activities. Using SpotDist metric, we measured the dissimilarity between the spiking patterns. We showed that distance of SpotDist can separate the spontaneous activities from evoked response while maintaining the clustering properties.    
+We took Allen Institute Brain Observatory dataset [[1]](#1). Mice were shown drifting grating visual stimulus moving in 8 different directions on the screen while being electrophysiologically recorded. Between the stimulus presentations, the neural activities were considered as the spontaneous activities. We compare the evoked neural response in V1 with the spontaneous activities. Using SpotDist metric [[2]](#2), we measured the dissimilarity between the spiking patterns. We showed that distance of SpotDist can separate the spontaneous activities from evoked response while maintaining the clustering properties.    
 
 notebook ``` spotdist.py``` computes the neural representations of drifting grating stimuli and grey screen and tests distance-of-distance transformation.  
+
+
+## References
+<a id="1">[1]</a> 
+Grossberger, Lukas, Francesco P. Battaglia, and Martin Vinck. "Unsupervised clustering of temporal patterns in high-dimensional neuronal ensembles using a novel dissimilarity measure." PLoS computational biology 14.7 (2018): e1006283.
+
+<a id="2">[2]</a> 
+Siegle, Joshua H., et al. "Survey of spiking in the mouse visual system reveals functional hierarchy." Nature 592.7852 (2021): 86-92.
+
