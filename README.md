@@ -2,14 +2,14 @@
 
 Jinke Liu , Martin Vinck 
 ## Introduction 
-In this project, we introduce a simple transformation on the distance matrix based on the neighboring relationship, so that the scattering noise in the data, if any, can be attracted to each other. Thus, the transformation helps separate the the clusters in the dataset from the scattering noise and improve the low-dimensional t-SNE embedding.  
+In this project, we introduce a simple transformation on the distance matrix based on the neighboring relationship, so that the scattering noise in the data, if any, can be attracted to each other. Thus, the transformation helps separate the clusters from the scattering noise in the dataset and improves the low-dimensional t-SNE embedding.  
 
 ## Installation 
 The following examples were run in the Python virtual environment with dependencies listed below:
 1. ```conda install python=3.6.5```
 2. ```conda install matplotlib```
 3. ```conda install torch```
-4. ```conda install spotDist```
+4. ```conda install spot```
 5. ```conda install allensdk```
 
 
@@ -32,7 +32,7 @@ We took natural images of 20 different object classes from [PASCAL VOC2007 datas
 notebook ``` alex.ipynb``` extracts the CNN representations of object/random patches and tests distance-of-distance transformation.  
 
 ### Example: Neural represenation of drifting grating stimulus
-We took Allen Institute Brain Observatory dataset [[1]](#1). Mice were shown drifting grating visual stimulus moving in 8 different directions on the screen while being electrophysiologically recorded. Between the stimulus presentations, the neural activities were considered as the spontaneous activities. We compare the evoked neural response in V1 with the spontaneous activities. Using SpotDist metric [[2]](#2), we measured the dissimilarity between the spiking patterns. We showed that distance of SpotDist can separate the spontaneous activities from evoked response while maintaining the clustering properties.    
+We took Allen Institute Brain Observatory dataset [[1]](#1). Mice were shown drifting grating visual stimulus moving in 8 different directions on the screen while being electrophysiologically recorded. Between the stimulus presentations, the neural activities were considered as the spontaneous activities. We compare the evoked neural response in V1 with the spontaneous activities. Using SpotDist metric [[2]](#2)[[3]](#3), we measured the dissimilarity between the spiking patterns. We showed that distance of SpotDist can separate the spontaneous activities from evoked response while maintaining the clustering properties.    
 
 notebook ``` spotdist.ipynb``` computes the neural representations of drifting grating stimuli and grey screen and tests distance-of-distance transformation.  
 
@@ -43,3 +43,6 @@ Siegle, Joshua H., et al. "Survey of spiking in the mouse visual system reveals 
 
 <a id="2">[2]</a> 
 Grossberger, Lukas, Francesco P. Battaglia, and Martin Vinck. "Unsupervised clustering of temporal patterns in high-dimensional neuronal ensembles using a novel dissimilarity measure." PLoS computational biology 14.7 (2018): e1006283.
+
+<a id="3">[3]</a> 
+Sotomayor-Gómez, Boris, Francesco P. Battaglia, and Martin Vinck. "A geometry of spike sequences: Fast, unsupervised discovery of high-dimensional neural spiking patterns based on optimal transport theory." bioRxiv (2020).
