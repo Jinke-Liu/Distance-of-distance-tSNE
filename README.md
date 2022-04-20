@@ -32,7 +32,7 @@ We took natural images of 20 different object classes from [PASCAL VOC2007 datas
 notebook ``` alex.ipynb``` extracts the CNN representations of object/random patches and tests distance-of-distance transformation.  
 
 ### Example: Neural represenation of drifting grating stimulus
-We took Allen Institute Brain Observatory dataset [[1]](#1). Mice were shown drifting grating visual stimulus moving in 8 different directions on the screen while being electrophysiologically recorded. Between the stimulus presentations, the neural activities were considered as the spontaneous activities. We compare the evoked neural response in V1 with the spontaneous activities. Using SpotDist metric [[2]](#2)[[3]](#3), we measured the dissimilarity between the spiking patterns. We showed that distance of SpotDist can separate the spontaneous activities from evoked response while maintaining the clustering properties.    
+We took Allen Institute Brain Observatory dataset [[1]](#1). Mice were shown drifting grating visual stimulus moving in 8 different directions on the screen while being electrophysiologically recorded. Between the stimulus presentations, the neural activities were considered as the spontaneous activities. We compare the evoked neural response in V1 with the spontaneous activities. Using SpotDist metric [[2](#2), [3](#3)], we measured the dissimilarity between the spiking patterns. We showed that distance of SpotDist can separate the spontaneous activities from evoked response while maintaining the clustering properties.    
 
 notebook ``` spotdist.ipynb``` computes the neural representations of drifting grating stimuli and grey screen and tests distance-of-distance transformation.  
 
